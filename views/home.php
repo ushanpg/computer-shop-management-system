@@ -1,0 +1,1 @@
+<script> window.location="../controllers/catalogController.php?req=catalog";</script>

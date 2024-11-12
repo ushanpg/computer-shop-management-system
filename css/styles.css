@@ -1,0 +1,310 @@
+body {
+  padding: 0;
+  font-family: Tahoma, sans-serif;
+}
+
+a.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 24px;
+  line-height: 20px;
+  text-decoration: none;
+  color: orangered;
+  font-weight: 700;
+}
+
+nav.main-navigation {
+  position: fixed;
+  left: 0;
+  background: white;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 1px 1px 2px;
+  padding: 0px 15px 15px 0px;
+}
+
+nav.main-navigation ul.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  text-align: right;
+}
+
+.nav-list li.nav-list-item {
+  display: inline-block;
+  line-height: 40px;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+a.nav-link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  color: #404040;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    pointer-events: auto;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.nav-list li {
+  animation: FadeIn 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation-fill-mode: both;
+}
+
+.nav-list li:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.nav-list li:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.nav-list li:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+.nav-list li:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+.nav-list li:nth-child(5) {
+  animation-delay: 1.5s;
+}
+
+/* Animation */
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+  opacity: 0;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+h3 {
+  text-align: center;
+  margin: 2rem 2rem;
+}
+
+.info {
+  height: 10rem;
+  background-color: darkorange;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.topper {
+  height: 1px;
+  background-color: orangered;
+}
+
+.bumper {
+  height: 2rem;
+  padding: 0 15px 0 15px;
+  background-color: orangered;
+}
+
+.bumper p {
+  margin-bottom: 0;
+}
+
+.phone-img {
+  height: 400px;
+  width: 500px;
+  border-radius: 10%;
+  margin: 2rem 4rem 2rem;
+  box-shadow: 10px 10px 10px lightblue;
+}
+
+.appText {
+  margin: 5rem 0;
+}
+
+.applink {
+  height: 70px;
+  margin: 0 1rem;
+}
+
+.fa.social {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.fa:hover,
+.applink:hover,
+.scrollBtn:hover,
+a img:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-twitter {
+  color: #55acee;
+}
+
+.fa-youtube {
+  color: #bb0000;
+}
+
+.fa-instagram {
+  color: purple;
+}
+
+.scrollBtn {
+  position: fixed;
+  font-size: 2rem;
+  top: 90%;
+  left: 90%;
+  z-index: 1;
+  display: none;
+}
+
+.visible {
+  display: inline;
+}
+
+.invisible {
+  display: none;
+}
+
+.carousel img {
+  max-height: 450px;
+  margin-top: 45px;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(80, 80, 80);
+}
+
+.topMargin{
+  margin-top: 4rem;
+} 
+
+.userImg{
+  height: 40px;
+  width: 40px; 
+  border: 2px solid #009900; 
+  border-radius: 50%;
+}
+
+.brandLogo{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.exportBtn {
+  position: fixed;
+  top: 83%;
+  left: 90%;
+  z-index: 1;
+  width: 100px;
+}
+
+.printBtn {
+  position: fixed;
+  top: 90%;
+  left: 90%;
+  z-index: 1;
+  width: 100px;
+}
+
+.exportMenu {
+  position: fixed;
+  height: 150px;
+  width: 200px;
+  top: 75%;
+  left: 85%;
+  z-index: 1;
+}
+
+img {
+  border-radius: 10px;
+}
+
+#chartdiv, #chartdiv2 {
+  width: 50%;
+  height: 384px;
+}
+
+#collapsible {
+  padding: 10px;
+  background-color: rgb(0, 175, 255);
+  margin: 0;
+  text-decoration: none;
+  font-weight: normal;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+#collapsible:hover { background: rgb(0, 200, 255); }
+#collapsible-child  { background: rgb(0, 200, 255); }
+
+ul{
+  list-style-type: none;
+}
